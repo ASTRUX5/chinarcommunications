@@ -4,6 +4,7 @@
    ============================================================ */
 const CF_WORKER_URL = 'https://chinar-api.zfdwqe9534.workers.dev';
 const CLOUDINARY_CLOUD = 'di5jwknju';
+
 function getProducts() {
   try { return JSON.parse(sessionStorage.getItem('cv_products') || '[]'); } catch(e) { return []; }
 }
