@@ -2,8 +2,9 @@
    Chinar Communications — Shared Data Layer
    Set these two values before deploying:
    ============================================================ */
-const CF_WORKER_URL = 'https://chinar-api.zfdwqe9534.workers.dev';
-const CLOUDINARY_CLOUD = 'di5jwknju';
+const CF_WORKER_URL = 'https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev';
+const CLOUDINARY_CLOUD = 'YOUR_CLOUDINARY_CLOUD_NAME';
+
 function getProducts() {
   try { return JSON.parse(sessionStorage.getItem('cv_products') || '[]'); } catch(e) { return []; }
 }
